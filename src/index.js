@@ -3,5 +3,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import App from "./App.js";
+
 // HTML in JS WITHOUT a string -> JSX syntax
-ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <h1>Hello, world!</h1>
+    <p>This is the index.js file.</p>
+
+    {/* Display the App component in the div */}
+    <App />
+  </div>,
+  document.getElementById("root")
+);
